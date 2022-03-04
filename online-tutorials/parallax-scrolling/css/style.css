@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header .logo {
+  color: white;
+  font-weight: 8700;
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  color: white;
+  border-radius: 2rem;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background-color: white;
+  color: #2b1055;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+
+section img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+section img#mountains_behind {
+  left: 25vw;
+  bottom: 0;
+  width: 50vw;
+  height: auto;
+}
+
+section img#mountains_front {
+  z-index: 10;
+}
+
+section img#stars {
+  height: auto;
+} 
+
+section img#moon {
+  left: calc(50% - 100px);
+  top: 150px;
+  width: 200px;
+  height: 200px;
+  mix-blend-mode: screen;
+}
+
+#text {
+  position: absolute;
+  right: -15rem;
+  color: white;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  border-radius: 4rem;
+  background-color: white;
+  color: #2b1055;
+  font-size: 1.5rem;
+  transform: translateY(10rem);
+}
+
+.sec {
+  position: relative;
+  padding: 10rem;
+  background-color: #1c0522;
+}
+
+.sec h2 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.sec p {
+  color: white;
+  font-size: 1rem;
+}
